@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <center>
+    <button >Click me to colour changer</button>
+    <!-- query selector -->
+    <!-- odd even selecot -->
+
+
+    <script>
+        const btn= document.querySelector("button");
+const body = document.querySelector("body");
+body.style.backgroundColor = 'green';
+const color = ['pink','skyblue','red','yellow','grey','purple'];
+
+// pickn panna add even listener only use buttons(response)
+document.addEventListener('click',function(){
+    const colorindex = parseInt(Math.random()*color.length);
+    body.style.backgroundColor = color[colorindex]
+    
+})
+
+    </script>
+</body>
+</html>
